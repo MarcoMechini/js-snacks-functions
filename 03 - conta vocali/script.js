@@ -4,6 +4,12 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+
+/**
+ * Description placeholder
+ *
+ * @param {string} parola
+ */
 const findVocals = (parola) => {
     const vocals = 'aeiou'
     let vocalsCounter = 0;
@@ -16,11 +22,11 @@ const findVocals = (parola) => {
             vocalsFind.push(element);
         }
     }
-    console.log(`Il numero di vocali trovate è: ${vocalsCounter} (${vocalsFind.join(', ')})`);
+    return (`Il numero di vocali trovate è: ${vocalsCounter} (${vocalsFind.join(', ')})`);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-findVocals(word);
+console.log(findVocals(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)

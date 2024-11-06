@@ -8,6 +8,13 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario';
 
 // Dichiara la funzione qui.
+
+/**
+ * La funzione ritorna una stringa in base a che ore sono con un determianto saluto in base all'orario seguito da il nome inserito dall'utente
+ *
+ * @param {string} nome
+ * @returns {string}
+ */
 const saluto = (nome) => {
     const date = new Date();
     const ora = date.getHours;
@@ -20,14 +27,13 @@ const saluto = (nome) => {
     } else {
         message += 'Buonasera'
     }
-    message += ` ${name}`
-
-    console.log(message);
+    return message += ` ${name}`
 }
 
-
 // Invoca la funzione qui e stampa il risultato in console
-saluto('mario')
+
+console.log(saluto(name));
+
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
