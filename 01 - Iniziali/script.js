@@ -6,10 +6,10 @@ const namesFirstChar = [];
 // Dichiara la funzione qui.
 
 /**
- * Description placeholder
+ * Prende il primo carattere di ogni elemento
  *
  * @param {string} word
- * @param {string} //char
+ * @return {string} //char
  */
 // function firstChar(word) {
 //     return word[0]
@@ -17,12 +17,28 @@ const namesFirstChar = [];
 
 const firstChar = (word) => word[0];
 
-// Invoca la funzione qui e stampa il risultato in console
-for (let i = 0; i < names.length; i++) {
-    const curName = names[i];
-    namesFirstChar.push(firstChar(curName));
+
+// function saveChar() {
+//     for (let i = 0; i < names.length; i++) {
+//         const curName = names[i];
+//         namesFirstChar.push(firstChar(curName));
+//     }
+// }
+
+/**
+ * Salva i char dentro un array
+ *
+ * @return {string} //???
+ */
+const saveChar = () => {
+    for (let i = 0; i < names.length; i++) {
+        namesFirstChar.push(firstChar(names[i]));
+    }
 }
 
+// Invoca la funzione qui e stampa il risultato in console
+
+saveChar();
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
