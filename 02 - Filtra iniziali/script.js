@@ -14,12 +14,13 @@ let firstChar = 'A'
  * @param {*} char
  * @returns {{}}
  */
-const alfabetArray = (namesArr, char) => {
+const alfabetArray = (namesArr, char, user = null) => {
     char = char.toUpperCase();
     const alfabetArray = [];
+
     for (let i = 0; i < namesArr.length; i++) {
         const curName = namesArr[i];
-        curName[0] === char ? alfabetArray.push(curName) : '';
+        if (curName[0] === char) alfabetArray.push(curName);
     }
     return alfabetArray
 }
